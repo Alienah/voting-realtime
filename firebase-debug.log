@@ -1,0 +1,80 @@
+[debug] [2018-06-08T12:56:48.442Z] ----------------------------------------------------------------------
+[debug] [2018-06-08T12:56:48.444Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-06-08T12:56:48.444Z] CLI Version:   3.18.5
+[debug] [2018-06-08T12:56:48.444Z] Platform:      linux
+[debug] [2018-06-08T12:56:48.444Z] Node Version:  v8.11.2
+[debug] [2018-06-08T12:56:48.444Z] Time:          Fri Jun 08 2018 14:56:48 GMT+0200 (CEST)
+[debug] [2018-06-08T12:56:48.444Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-08T12:56:48.451Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-08T12:56:48.451Z] > authorizing via signed-in user
+[debug] [2018-06-08T12:56:48.453Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/realtime-voting-29280  
+  
+ Fri Jun 08 2018 14:56:48 GMT+0200 (CEST)
+[debug] [2018-06-08T12:56:49.433Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-08T12:56:49.434Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/realtime-voting-29280/tokens  
+  
+ Fri Jun 08 2018 14:56:49 GMT+0200 (CEST)
+[debug] [2018-06-08T12:56:50.552Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-08T12:56:50.555Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/realtime-voting-29280  
+  
+ Fri Jun 08 2018 14:56:50 GMT+0200 (CEST)
+[debug] [2018-06-08T12:56:51.474Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/usuario/Documentos/ejercicios-kairos/firebase/realtime-voting'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-08T12:56:51.865Z] Fetching environment
+[debug] [2018-06-08T12:56:52.346Z] Error: EACCES: permission denied, open '/home/usuario/.config/gcloud/application_default_credentials.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1299:33)
+    at module.exports (/usr/lib/node_modules/firebase-tools/lib/ensureDefaultCredentials.js:42:6)
+    at FunctionsEmulator.start (/usr/lib/node_modules/firebase-tools/lib/functionsEmulator.js:118:3)
+    at Object.start (/usr/lib/node_modules/firebase-tools/lib/serve/functions.js:9:29)
+    at /usr/lib/node_modules/firebase-tools/lib/serve/index.js:17:21
+    at arrayMap (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
+    at Function.map (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9554:14)
+    at _serve (/usr/lib/node_modules/firebase-tools/lib/serve/index.js:15:7)
+    at Command._action (/usr/lib/node_modules/firebase-tools/commands/serve.js:48:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-06-08T12:57:03.122Z] ----------------------------------------------------------------------
+[debug] [2018-06-08T12:57:03.125Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-06-08T12:57:03.125Z] CLI Version:   3.18.5
+[debug] [2018-06-08T12:57:03.125Z] Platform:      linux
+[debug] [2018-06-08T12:57:03.125Z] Node Version:  v8.11.2
+[debug] [2018-06-08T12:57:03.125Z] Time:          Fri Jun 08 2018 14:57:03 GMT+0200 (CEST)
+[debug] [2018-06-08T12:57:03.125Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-08T12:57:03.132Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-08T12:57:03.132Z] > authorizing via signed-in user
+[debug] [2018-06-08T12:57:03.134Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/realtime-voting-29280  
+  
+ Fri Jun 08 2018 14:57:03 GMT+0200 (CEST)
+[debug] [2018-06-08T12:57:03.982Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-08T12:57:03.985Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/realtime-voting-29280/tokens  
+  
+ Fri Jun 08 2018 14:57:03 GMT+0200 (CEST)
+[debug] [2018-06-08T12:57:04.684Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-08T12:57:04.687Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/realtime-voting-29280  
+  
+ Fri Jun 08 2018 14:57:04 GMT+0200 (CEST)
+[debug] [2018-06-08T12:57:05.605Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/usuario/Documentos/ejercicios-kairos/firebase/realtime-voting'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-08T12:57:05.991Z] Fetching environment
+[debug] [2018-06-08T12:57:05.993Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/145484062007:getServerAppConfig  
+  
+ Fri Jun 08 2018 14:57:05 GMT+0200 (CEST)
+[debug] [2018-06-08T12:57:05.993Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/145484062007/clients/_:getWebAppConfig  
+  
+ Fri Jun 08 2018 14:57:05 GMT+0200 (CEST)
+[debug] [2018-06-08T12:57:06.525Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-08T12:57:06.525Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-08T12:57:06.536Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-08T12:57:07.569Z] Parsing function triggers
