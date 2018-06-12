@@ -1,3 +1,24 @@
+firebase.initializeApp();
+let googleProvider = new firebase.auth.GoogleAuthProvider();
+let btnGoogle = document.getElementById('btn--google');
+btnGoogle.addEventListener('click', signInWithGoogle);
+
+function signInWithGoogle() {
+ 
+    firebase.auth().signInWithPopup(googleProvider)
+    .then((result) => {
+        console.log(result);
+        
+        let token = result.credential.accessToken;
+        let user = result.user;
+    })
+    .catch((error) => {
+        console.error('No se ha podido autentificar. ' + error);
+    });
+}
+
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 //     // // The Firebase SDK is initialized and available here!
