@@ -18,6 +18,7 @@
 }
 .login-by-app{
     margin: 12px 0;
+    text-align: center;
 }
 .login-by-email{
     min-height: 30vh;
@@ -37,4 +38,13 @@
     background: cadetblue;
     color: white;
     font-size: inherit;
+}
+/* .main__container{
+    display: none;
+} */
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }
