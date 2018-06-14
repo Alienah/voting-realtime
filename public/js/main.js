@@ -1,12 +1,3 @@
-// Initialize Firebase
-var config = {
-apiKey: "AIzaSyAG1l2xXjiAAxOOxJ2WnSVx9nw5O17lvoM",
-authDomain: "realtime-voting-29280.firebaseapp.com",
-databaseURL: "https://realtime-voting-29280.firebaseio.com",
-projectId: "realtime-voting-29280",
-storageBucket: "realtime-voting-29280.appspot.com",
-messagingSenderId: "145484062007"
-};
 firebase.initializeApp(config);
 
 let googleProvider = new firebase.auth.GoogleAuthProvider();
@@ -20,17 +11,17 @@ let btnSignOut = document.getElementById('btn--out');
 btnSignOut.addEventListener('click', signOutOfApp);
 
 function signInWithGoogle() {
- 
+
     firebase.auth().signInWithPopup(googleProvider)
-    .then((result) => {
-        console.log(result);
-        
-        let token = result.credential.accessToken;
-        let user = result.user;
-    })
-    .catch((error) => {
-        console.error('No se ha podido autentificar. ' + error);
-    });
+        .then((result) => {
+            console.log(result);
+
+            let token = result.credential.accessToken;
+            let user = result.user;
+        })
+        .catch((error) => {
+            console.error('No se ha podido autentificar. ' + error);
+        });
 }
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -48,41 +39,15 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function signInWithEmail() {
     firebase.auth().signInWithEmailAndPassword(userLogin, userPassword)
-    .catch((error) => {
-        let errorCode = error.code;
-        let errorMessage = error.message;
-        console.log('Ha ocurrido un error.' + errorCode, errorMessage);
-    });
+        .catch((error) => {
+            let errorCode = error.code;
+            let errorMessage = error.message;
+            console.log('Ha ocurrido un error.' + errorCode, errorMessage);
+        });
 }
 
-function signOutOfApp () {
+function signOutOfApp() {
 
     firebase.auth().signOut();
-    // .then(function () {
-    //     // Sign-out successful.
-    //     console.log('out');
-        
-    // }).catch(function (error) {
-    //     // An error happened.
-    // });
-}
-// document.addEventListener('DOMContentLoaded', function () {
-//     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-//     // // The Firebase SDK is initialized and available here!
-//     //
-//     // firebase.auth().onAuthStateChanged(user => { });
-//     // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-//     // firebase.messaging().requestPermission().then(() => { });
-//     // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-//     //
-//     // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-//     try {
-//         let app = firebase.app();
-//         let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-//         document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-//     } catch (e) {
-//         console.error(e);
-//         document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-//     }
-// });
+}
