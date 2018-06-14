@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;    
+}
+.__header{
+    padding: 15px;
+    text-align: center;
+}
+.__main{
+    display: flex;
+    justify-content: center;
+}
+.login-container{
+    width: 430px;
+    max-height: 70%;
+    padding: 15px;
+    text-align: center;
+}
+.login-by-app{
+    margin: 12px 0;
+}
+.login-by-email{
+    min-height: 30vh;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn{
+    height: 45px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px grey;
+    border: 1px solid cadetblue;
+    background: cadetblue;
+    color: white;
+    font-size: inherit;
+}

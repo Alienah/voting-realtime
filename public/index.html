@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.0.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.0.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.0.4/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+  </head>
+  <body>
+    <header class="__header">
+      <h1>Realtime Voting</h1>
+      <h2>Inicia sesión para votar</h2>
+    </header>
+    <main class="__main">
+      
+      <div class="login-container">
+        <div class="login-by-app">
+          <span> <button type="button" class="btn" id="btn--google">Inicia sesión con Google</button></span>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between">
+          <hr align="left" noshade="noshade" size="2" width="40%" />
+          <span>o</span>
+          <hr align="right" noshade="noshade" size="2" width="40%" />
+        </div>
+        
+        <form action="post" class="login-by-email">
+          <label for="user-login">Usuario: </label>
+          <input type="email" id="user-login" placeholder="Introduce tu email">
+          <label for="user-password">Contraseña: </label>
+          <input type="password" name="user-password" id="user-password" placeholder="*******">
+          <button type="button" class="btn">Inicia sesión</button>
+        </form>
+        <a href="">¿Has olvidado la contraseña?</a>
+        <a href="">Resgístrate</a>
+      </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
