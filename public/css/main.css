@@ -18,7 +18,10 @@
 }
 .login-by-app{
     margin: 12px 0;
+<<<<<<< HEAD
     text-align: center;
+=======
+>>>>>>> d0ac3328eee7c54e6e248375d1f1c96dded34af5
 }
 .login-by-email{
     min-height: 30vh;
